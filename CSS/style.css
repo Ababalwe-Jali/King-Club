@@ -1,6 +1,4 @@
-/* ==========================================================================
-   KOFEO — Design tokens
-   ========================================================================== */
+
 :root {
   /* color */
   --c-accent: #FFDEDE;
@@ -15,11 +13,11 @@
   --c-bg-dark: #161716;
   --c-bg-darkest: #0A0B0A;
 
-  /* type */
+  
   --f-display: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --f-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 
-  /* spacing scale */
+
   --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
   --sp-5: 20px; --sp-6: 24px; --sp-7: 32px; --sp-8: 36px;
   --sp-9: 40px; --sp-10: 52px; --sp-11: 60px; --sp-12: 72px;
@@ -53,9 +51,7 @@
   }
 }
 
-/* ==========================================================================
-   Reset
-   ========================================================================== */
+
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 img { max-width: 100%; display: block; }
@@ -84,9 +80,7 @@ html.has-custom-cursor, html.has-custom-cursor a, html.has-custom-cursor button 
 
 ::selection { background: var(--c-accent); color: var(--c-bg-primary); }
 
-/* ==========================================================================
-   Typography
-   ========================================================================== */
+
 .eyebrow {
   font-family: var(--f-body);
   font-size: 13px;
@@ -172,9 +166,7 @@ html.has-custom-cursor, html.has-custom-cursor a, html.has-custom-cursor button 
   .quote-text { font-size: 24px; line-height: 34px; }
 }
 
-/* ==========================================================================
-   Layout primitives
-   ========================================================================== */
+
 .container {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -229,9 +221,7 @@ html.has-custom-cursor, html.has-custom-cursor a, html.has-custom-cursor button 
 .gap-4 { gap: var(--sp-4); }
 .gap-6 { gap: var(--sp-6); }
 
-/* ==========================================================================
-   Buttons
-   ========================================================================== */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -286,9 +276,7 @@ html.has-custom-cursor, html.has-custom-cursor a, html.has-custom-cursor button 
   .btn { padding: 12px 24px; }
 }
 
-/* ==========================================================================
-   Cards
-   ========================================================================== */
+
 .card-dark {
   background: var(--c-bg-secondary);
   border: 1px solid #D9D9D9;
@@ -309,9 +297,7 @@ html.has-custom-cursor, html.has-custom-cursor a, html.has-custom-cursor button 
   letter-spacing: 1px;
 }
 
-/* ==========================================================================
-   Forms
-   ========================================================================== */
+
 .form-label {
   display: block;
   font-family: var(--f-body);
@@ -433,9 +419,7 @@ textarea.input-text--long {
   .form-grid { grid-template-columns: 1fr; }
 }
 
-/* ==========================================================================
-   Header / Navigation
-   ========================================================================== */
+
 .site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -540,9 +524,7 @@ textarea.input-text--long {
   .main-nav .btn { width: 100%; }
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+
 .site-footer {
   background: var(--c-bg-darkest);
   padding: var(--sp-12) var(--section-pad-x) var(--sp-7);
@@ -606,9 +588,7 @@ textarea.input-text--long {
 .footer-newsletter input::placeholder { color: #999999; }
 .footer-newsletter button { color: var(--c-accent); font-size: 14px; font-weight: 600; }
 
-/* ==========================================================================
-   Hero
-   ========================================================================== */
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -717,9 +697,7 @@ textarea.input-text--long {
   100% { transform: scaleY(0); transform-origin: bottom; }
 }
 
-/* ==========================================================================
-   Scroll reveal (sections)
-   ========================================================================== */
+
 .reveal {
   opacity: 0;
   transform: translateY(48px);
@@ -729,9 +707,7 @@ textarea.input-text--long {
 .reveal--fade { transform: none; transition: opacity 1.1s ease; }
 .reveal--fade.in-view { opacity: 1; }
 
-/* ==========================================================================
-   Image reveal (side curtain slide)
-   ========================================================================== */
+
 .img-reveal {
   position: relative;
   overflow: hidden;
@@ -764,9 +740,7 @@ textarea.input-text--long {
 .img-ratio-wide { aspect-ratio: 16 / 10; }
 .img-ratio-banner { aspect-ratio: 21 / 8; }
 
-/* ==========================================================================
-   Social section
-   ========================================================================== */
+
 .social-section {
   overflow: hidden;
 }
@@ -899,9 +873,7 @@ textarea.input-text--long {
   }
 }
 
-/* ==========================================================================
-   FAQ section
-   ========================================================================== */
+
 .faq-section {
   overflow: hidden;
 }
@@ -1084,9 +1056,7 @@ textarea.input-text--long {
   }
 }
 
-/* ==========================================================================
-   Landing about
-   ========================================================================== */
+
 .about-landing {
   overflow: hidden;
 }
@@ -1216,9 +1186,7 @@ textarea.input-text--long {
   }
 }
 
-/* ==========================================================================
-   Cocktail showcase
-   ========================================================================== */
+
 .cocktail-showcase {
   overflow: hidden;
 }
@@ -1252,9 +1220,7 @@ textarea.input-text--long {
   }
 }
 
-/* ==========================================================================
-   Gallery
-   ========================================================================== */
+
 .gallery-hero .hero__bg img {
   object-position: center 58%;
   filter: grayscale(.05) brightness(.48) contrast(1.1);
@@ -1498,9 +1464,7 @@ body.lightbox-open {
   .gallery-lightbox__img { max-height: 70vh; }
 }
 
-/* ==========================================================================
-   Cursor
-   ========================================================================== */
+
 .cursor-ring {
   position: fixed;
   top: 0; left: 0;
@@ -1535,9 +1499,7 @@ body.lightbox-open {
 .cursor-ring.is-down { width: 26px; height: 26px; }
 html.cursor-hidden .cursor-ring, html.cursor-hidden .cursor-dot { opacity: 0; }
 
-/* ==========================================================================
-   Curtain page transition
-   ========================================================================== */
+
 .curtain {
   position: fixed;
   inset: 0;
@@ -1573,9 +1535,7 @@ html.cursor-hidden .cursor-ring, html.cursor-hidden .cursor-dot { opacity: 0; }
 }
 .curtain.is-open { transform: translateY(-100%); }
 
-/* ==========================================================================
-   Cookie consent
-   ========================================================================== */
+
 .cookie-consent {
   position: fixed;
   left: 0;
@@ -1789,9 +1749,7 @@ html.cursor-hidden .cursor-ring, html.cursor-hidden .cursor-dot { opacity: 0; }
   }
 }
 
-/* ==========================================================================
-   Misc page sections
-   ========================================================================== */
+
 .section-head { max-width: 680px; margin-bottom: var(--sp-11); }
 .section-head--center { margin-left: auto; margin-right: auto; text-align: center; }
 .section-head__title { margin-top: var(--sp-4); }
@@ -2275,9 +2233,7 @@ html.cursor-hidden .cursor-ring, html.cursor-hidden .cursor-dot { opacity: 0; }
 }
 .form-success.is-shown { display: block; }
 
-/* ==========================================================================
-   Careers
-   ========================================================================== */
+
 .careers-hero .hero__bg img {
   object-position: center 42%;
 }

@@ -1,16 +1,11 @@
-/* ==========================================================================
-   KOFEO — main.js
-   Custom cursor · curtain page transitions · scroll reveals · image reveals
-   ========================================================================== */
+
 (function () {
   'use strict';
 
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-  /* ------------------------------------------------------------------ */
-  /* Hero entrance                                                       */
-  /* ------------------------------------------------------------------ */
+
   var HeroEntrance = {
     played: false,
 
@@ -49,9 +44,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Curtain transition                                                  */
-  /* ------------------------------------------------------------------ */
+
   var Curtain = {
     el: null,
     duration: 1050,
@@ -123,9 +116,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Custom cursor                                                       */
-  /* ------------------------------------------------------------------ */
+
   var Cursor = {
     ring: null,
     dot: null,
@@ -188,9 +179,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Scroll reveal — sections fade/rise in once 40% visible              */
-  /* ------------------------------------------------------------------ */
+
   var ScrollReveal = {
     init: function () {
       var targets = Array.prototype.slice.call(document.querySelectorAll('.reveal, .reveal-scope')).filter(function (target) {
@@ -216,9 +205,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Image reveal — side curtain panels slide away, image settles        */
-  /* ------------------------------------------------------------------ */
+
   var ImageReveal = {
     init: function () {
       var wraps = document.querySelectorAll('.img-reveal');
@@ -253,9 +240,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Mobile nav toggle                                                    */
-  /* ------------------------------------------------------------------ */
+
   var Nav = {
     init: function () {
       var toggle = document.querySelector('.nav-toggle');
@@ -284,9 +269,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Contact form (static demo submission)                               */
-  /* ------------------------------------------------------------------ */
+
   var ContactForm = {
     init: function () {
       var form = document.querySelector('#reserveForm');
@@ -301,9 +284,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* FAQ accordion                                                       */
-  /* ------------------------------------------------------------------ */
+
   var FAQAccordion = {
     init: function () {
       var items = document.querySelectorAll('.faq-item');
@@ -344,9 +325,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Gallery lightbox                                                    */
-  /* ------------------------------------------------------------------ */
+
   var GalleryLightbox = {
     items: [],
     modal: null,
@@ -468,9 +447,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Testimonials carousel                                               */
-  /* ------------------------------------------------------------------ */
+
   var Testimonials = {
     carousels: [],
 
@@ -612,9 +589,6 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Click feedback                                                      */
-  /* ------------------------------------------------------------------ */
   var ClickFeedback = {
     init: function () {
       var targets = document.querySelectorAll('[data-click-feedback]');
@@ -639,9 +613,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Cookie consent                                                      */
-  /* ------------------------------------------------------------------ */
+
   var CookieConsent = {
     banner: null,
     currentChoice: null,
@@ -694,9 +666,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /* Careers page                                                        */
-  /* ------------------------------------------------------------------ */
+
   var Careers = {
     root: null,
     list: null,
@@ -1164,7 +1134,7 @@
     }
   };
 
-  /* ------------------------------------------------------------------ */
+  
   document.addEventListener('DOMContentLoaded', function () {
     Curtain.init();
     Cursor.init();
