@@ -87,7 +87,7 @@ html.has-custom-cursor, html.has-custom-cursor a, html.has-custom-cursor button 
   font-weight: 600;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--c-accent);
+  color: #fff;
   display: inline-flex;
   align-items: center;
   gap: var(--sp-3);
@@ -586,7 +586,7 @@ textarea.input-text--long {
 .footer-newsletter { display: flex; border-bottom: 1px solid #999999; padding-bottom: 4px; }
 .footer-newsletter input { flex: 1 1 auto; min-width: 0; background: none; border: none; color: #fff; font-size: 14px; padding: 6px 0; }
 .footer-newsletter input::placeholder { color: #999999; }
-.footer-newsletter button { color: var(--c-accent); font-size: 14px; font-weight: 600; }
+.footer-newsletter button { color: #fff; font-size: 14px; font-weight: 600; }
 
 
 .hero {
@@ -1763,7 +1763,7 @@ html.cursor-hidden .cursor-ring, html.cursor-hidden .cursor-dot { opacity: 0; }
 .menu-item { display: grid; grid-template-columns: 1fr auto; gap: var(--sp-5); padding: var(--sp-6) 0; border-bottom: 1px solid var(--c-bg-secondary); }
 .menu-item__name { color: #fff; font-size: 20px; font-weight: 500; margin-bottom: var(--sp-2); }
 .menu-item__desc { color: var(--c-text-secondary); font-size: 15px; line-height: 22px; max-width: 460px; }
-.menu-item__price { color: var(--c-accent); font-family: var(--f-display); font-weight: 700; font-size: 18px; white-space: nowrap; align-self: start; }
+.menu-item__price { color: #fff; font-family: var(--f-display); font-weight: 700; font-size: 18px; white-space: nowrap; align-self: start; }
 .menu-item__tag { display: inline-block; margin-left: var(--sp-3); font-size: 11px; letter-spacing: 1px; color: var(--c-text-secondary); border: 1px solid var(--c-bg-secondary); padding: 2px 6px; vertical-align: middle; text-transform: uppercase; }
 
 .quote-block { max-width: 760px; margin: 0 auto; text-align: center; }
