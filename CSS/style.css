@@ -1469,7 +1469,7 @@ body.lightbox-open {
   position: fixed;
   top: 0; left: 0;
   width: 34px; height: 34px;
-  border: 1px solid var(--c-accent);
+  border: 1px solid #fff;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9000;
@@ -1481,7 +1481,7 @@ body.lightbox-open {
   position: fixed;
   top: 0; left: 0;
   width: 5px; height: 5px;
-  background: var(--c-accent);
+  background: #fff;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9001;
@@ -1492,7 +1492,7 @@ body.lightbox-open {
 .cursor-ring.is-hover {
   width: 64px; height: 64px;
   background: rgba(255, 222, 222, 0.08);
-  border-color: rgba(255,222,222,0.5);
+  border-color: #fff;
 }
 .cursor-ring.is-hover ~ .cursor-dot,
 .cursor-dot.is-hover { opacity: 0; }
@@ -1642,9 +1642,9 @@ html.cursor-hidden .cursor-ring, html.cursor-hidden .cursor-dot { opacity: 0; }
 .cookie-consent__button--accept:hover,
 .cookie-consent__button--accept:focus-visible {
   color: #000000;
-  background: var(--c-accent);
+ 
   border-color: var(--c-accent);
-  box-shadow: 0 18px 48px rgba(0,0,0,.42), 0 0 34px rgba(255,222,222,.18);
+  
   transform: translateY(-2px);
 }
 
@@ -2197,7 +2197,7 @@ html.cursor-hidden .cursor-ring, html.cursor-hidden .cursor-dot { opacity: 0; }
 }
 
 .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-7); text-align: center; }
-.stat-grid__num { font-family: var(--f-display); font-weight: 800; font-size: 56px; color: var(--c-accent); }
+.stat-grid__num { font-family: var(--f-display); font-weight: 800; font-size: 56px; color: #fff; }
 .stat-grid__label { color: var(--c-text-secondary); font-size: 14px; letter-spacing: 1px; text-transform: uppercase; margin-top: var(--sp-2); }
 @media (max-width: 767px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
 
